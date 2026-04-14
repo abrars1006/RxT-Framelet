@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Shoot | RxT Framelet</title>
+    <meta name="description" content="Book your reel editing and iPhone videography session with RxT Framelet.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="booking-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">RxT Framelet 📸</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Header -->
+    <header class="page-header fade-in">
+        <div class="container text-center">
+            <h1 class="hero-title">Book a Shoot</h1>
+            <p class="hero-tagline">Fill out your details below and hit send. We'll get back to you via WhatsApp.</p>
+        </div>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section section-padding fade-in">
+        <div class="container">
+            <div class="form-wrapper">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your WhatsApp number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Shoot Type</label>
+                        <div class="custom-select-wrapper">
+                            <select id="type" name="type" required>
+                                <option value="" disabled selected>Select a package...</option>
+                                <option value="Hourly">Hourly</option>
+                                <option value="Half Day">Half Day</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Business / Brand">Business / Brand</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" placeholder="City or area (e.g. Chennai)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Send Enquiry via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>RxT Framelet 📸</h2>
+                <p>Capturing Moments. Turning Them Into Reels.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/mr._perfect_vb" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i> Follow Us
+                    </a>
+                    <a href="https://wa.me/919344833734" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-whatsapp"></i> +91 93448 33734
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed & Developed by AxR Tech</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
